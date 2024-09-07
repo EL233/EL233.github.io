@@ -12,9 +12,8 @@
         <id>https://EL233.github.io/zh/blog/search-by-algolia</id>
         <link href="https://EL233.github.io/zh/blog/search-by-algolia"/>
         <updated>2024-09-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[使用Algolia DocSearch]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="使用algolia-docsearch">使用Algolia DocSearch<a href="https://el233.github.io/zh/blog/search-by-algolia#%E4%BD%BF%E7%94%A8algolia-docsearch" class="hash-link" aria-label="使用Algolia DocSearch的直接链接" title="使用Algolia DocSearch的直接链接">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="配置索引">配置索引<a href="https://el233.github.io/zh/blog/search-by-algolia#%E9%85%8D%E7%BD%AE%E7%B4%A2%E5%BC%95" class="hash-link" aria-label="配置索引的直接链接" title="配置索引的直接链接">​</a></h2>
+        <summary type="html"><![CDATA[配置索引]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="配置索引">配置索引<a href="https://el233.github.io/zh/blog/search-by-algolia#%E9%85%8D%E7%BD%AE%E7%B4%A2%E5%BC%95" class="hash-link" aria-label="配置索引的直接链接" title="配置索引的直接链接">​</a></h2>
 <p>首先向<a href="https://docsearch.algolia.com/apply/" target="_blank" rel="noopener noreferrer">DocSearch</a>申请你的项目</p>
 <p>成功后会给你发邮件确认✅</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="注册algolia">注册algolia<a href="https://el233.github.io/zh/blog/search-by-algolia#%E6%B3%A8%E5%86%8Calgolia" class="hash-link" aria-label="注册algolia的直接链接" title="注册algolia的直接链接">​</a></h2>
