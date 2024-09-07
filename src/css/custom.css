@@ -1,0 +1,67 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #243f6b;
+  --ifm-color-primary-dark: #203960;
+  --ifm-color-primary-darker: #1f365b;
+  --ifm-color-primary-darkest: #192c4b;
+  --ifm-color-primary-light: #284576;
+  --ifm-color-primary-lighter: #29487b;
+  --ifm-color-primary-lightest: #2f528b;
+}
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #70c8ff;
+  --ifm-color-primary-dark: #4bbaff;
+  --ifm-color-primary-darker: #39b3ff;
+  --ifm-color-primary-darkest: #029eff;
+  --ifm-color-primary-light: #95d6ff;
+  --ifm-color-primary-lighter: #a7ddff;
+  --ifm-color-primary-lightest: #def2ff;
+}
+
+[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* 弹窗 */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* 搜索框 */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* 条目 */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* 页脚 */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* 弹窗 */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* 搜索框 */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* 条目 */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* 页脚 */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+

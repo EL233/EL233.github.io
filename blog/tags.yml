@@ -1,0 +1,14 @@
+blog:
+  label: blog
+  permalink: /blog
+  description: blog tag description
+
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Docusaurus tag description
+
+project:
+  label: project
+  permalink: /project
+  description: project tag description
