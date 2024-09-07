@@ -11,4 +11,9 @@ docusaurus:
 project:
   label: project
   permalink: /project
-  description: project tag description
+  description: project tag 
+  
+algolia:
+  label: algolia
+  permalink: /algolia
+  description: /algolia tag description

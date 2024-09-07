@@ -3,7 +3,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "EL's webSite",
-  tagline: 'just do it',
+  tagline: 'you have to be very strong if you want to do something very wrong',
   favicon: 'img/favicon.ico',
 
   url: 'https://EL233.github.io',
