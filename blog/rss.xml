@@ -4,29 +4,55 @@
         <title>EL's webSite Blog</title>
         <link>https://EL233.github.io/blog</link>
         <description>EL's webSite Blog</description>
-        <lastBuildDate>Thu, 05 Sep 2024 18:05:51 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Sep 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Hello👋 我是EL]]></title>
-            <link>https://EL233.github.io/blog/about</link>
-            <guid>https://EL233.github.io/blog/about</guid>
-            <pubDate>Thu, 05 Sep 2024 18:05:51 GMT</pubDate>
-            <description><![CDATA[- 一个在读大学生👩‍💻]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>一个在读大学生👩‍💻</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="为什么要写博客">为什么要写博客<a href="https://el233.github.io/blog/about#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2" class="hash-link" aria-label="Direct link to 为什么要写博客" title="Direct link to 为什么要写博客">​</a></h3>
+            <title><![CDATA[基于algolia实现站内搜索]]></title>
+            <link>https://EL233.github.io/blog/search-by-algolia</link>
+            <guid>https://EL233.github.io/blog/search-by-algolia</guid>
+            <pubDate>Sat, 07 Sep 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[使用Algolia DocSearch]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="使用algolia-docsearch">使用Algolia DocSearch<a href="https://el233.github.io/blog/search-by-algolia#%E4%BD%BF%E7%94%A8algolia-docsearch" class="hash-link" aria-label="Direct link to 使用Algolia DocSearch" title="Direct link to 使用Algolia DocSearch">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="配置索引">配置索引<a href="https://el233.github.io/blog/search-by-algolia#%E9%85%8D%E7%BD%AE%E7%B4%A2%E5%BC%95" class="hash-link" aria-label="Direct link to 配置索引" title="Direct link to 配置索引">​</a></h2>
+<p>首先向<a href="https://docsearch.algolia.com/apply/" target="_blank" rel="noopener noreferrer">DocSearch</a>申请你的项目</p>
+<p>成功后会给你发邮件确认✅</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="注册algolia">注册algolia<a href="https://el233.github.io/blog/search-by-algolia#%E6%B3%A8%E5%86%8Calgolia" class="hash-link" aria-label="Direct link to 注册algolia" title="Direct link to 注册algolia">​</a></h2>
+<p>注册algolia，这时候应该会跳出get start画面，可以忽略。<br>
+<img decoding="async" loading="lazy" alt="图片" src="https://el233.github.io/assets/images/2024-9-716.17-4133b2b8298daf9961ecbbe9b3823de5.jpg" width="2940" height="1655" class="img_ev3q"></p>
+<p>回到主页面，点击左下角settings，点击applications，create application。<br>
+<img decoding="async" loading="lazy" alt="图片" src="https://el233.github.io/assets/images/2024-9-717.07-255d3a4cffe64a510a86b3f8d44488fd.jpg" width="2937" height="1656" class="img_ev3q"></p>
+<p>选择数据节点，这里我选择的是US West。<br>
+<img decoding="async" loading="lazy" alt="图片" src="https://el233.github.io/assets/images/2024-9-716.14-ae6519bc8e0011b9628c87b963116a42.jpg" width="2940" height="1632" class="img_ev3q"></p>
+<p>创建成功后我们可以获取API Keys。<br>
+<img decoding="async" loading="lazy" alt="图片" src="https://el233.github.io/assets/images/2024-9-716.18-8867b58c5fc660d636fa20d0054d991f.jpg" width="2076" height="1659" class="img_ev3q"></p>
+<p>点击左下角Data sources，Create Indices，设置一个indices name。<br>
+<img decoding="async" loading="lazy" alt="图片" src="https://el233.github.io/assets/images/2024-9-716.37-6c765bf366af552ac526187df8e74c99.jpg" width="2940" height="1662" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="连接algolia">连接algolia<a href="https://el233.github.io/blog/search-by-algolia#%E8%BF%9E%E6%8E%A5algolia" class="hash-link" aria-label="Direct link to 连接algolia" title="Direct link to 连接algolia">​</a></h2>
+<p>因为Docusaurus 的 @docusaurus/preset-classic 自带 Algolia DocSearch 集成。<br>
+<!-- -->所以如果你用的是经典预设，就不需要额外安装任何东西。<br>
+<!-- -->可以回到你的项目，在 docusaurus.config.js 中的 themeConfig 中添加一个 algolia 字段。</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">algolia: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        // Algolia 提供的 application ID</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        appId: 'YOUR_APP_ID',</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        //  公开 API 密钥：提交它没有危险</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        apiKey: 'YOUR_SEARCH_API_KEY',</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        indexName: 'YOUR_INDEX_NAME',</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        // 可选：见下文</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        contextualSearch: true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      },</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>如果你用的不是经典预设，首先安装软件包：<br>
+<code>npm install --save @docusaurus/theme-search-algolia</code></p>
+<p>然后在 docusaurus.config.js 中注册主题：</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">export default {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  // ...其他配置</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  themes: ['@docusaurus/theme-search-algolia'],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  themeConfig: {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    // ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">};</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>再按照上面的步骤添加一个 algolia 字段。</p>
+<p>这样search功能就完成啦。<br>
+<img decoding="async" loading="lazy" alt="图片" src="https://el233.github.io/assets/images/2024-9-716.45-a6ce8787d0eec2499266ed1acfe0eae7.jpg" width="2940" height="1666" class="img_ev3q"></p>
 <ul>
-<li>觉得好玩 想写🤓</li>
+<li>更多内容可参考<a href="https://docusaurus.io/zh-CN/docs/next/search" target="_blank" rel="noopener noreferrer">docusaurus</a>官网</li>
 </ul>]]></content:encoded>
+            <category>blog</category>
+            <category>algolia</category>
+            <category>Docusaurus</category>
         </item>
         <item>
             <title><![CDATA[通过Docusaurus搭建个人博客]]></title>
             <link>https://EL233.github.io/blog/first-blog-by-docusaurus</link>
             <guid>https://EL233.github.io/blog/first-blog-by-docusaurus</guid>
-            <pubDate>Thu, 05 Sep 2024 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 06 Sep 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[为什么选择通过Docusaurus搭建个人博客]]></description>
             <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="为什么选择通过docusaurus搭建个人博客">为什么选择通过Docusaurus搭建个人博客<a href="https://el233.github.io/blog/first-blog-by-docusaurus#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9%E9%80%9A%E8%BF%87docusaurus%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2" class="hash-link" aria-label="Direct link to 为什么选择通过Docusaurus搭建个人博客" title="Direct link to 为什么选择通过Docusaurus搭建个人博客">​</a></h3>
 <ul>
@@ -57,6 +83,20 @@
             <category>project</category>
             <category>blog</category>
             <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[Hello👋 我是EL]]></title>
+            <link>https://EL233.github.io/blog/about</link>
+            <guid>https://EL233.github.io/blog/about</guid>
+            <pubDate>Thu, 05 Sep 2024 18:05:51 GMT</pubDate>
+            <description><![CDATA[- 一个在读大学生👩‍💻]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>一个在读大学生👩‍💻</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="为什么要写博客">为什么要写博客<a href="https://el233.github.io/blog/about#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2" class="hash-link" aria-label="Direct link to 为什么要写博客" title="Direct link to 为什么要写博客">​</a></h3>
+<ul>
+<li>觉得好玩 想写🤓</li>
+</ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
