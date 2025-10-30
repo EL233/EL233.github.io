@@ -17,3 +17,9 @@ algolia:
   label: algolia
   permalink: /algolia
   description: /algolia tag description
+
+  
+swift:
+  label: swift
+  permalink: /swift
+  description: /swift tag description

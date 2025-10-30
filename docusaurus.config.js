@@ -94,12 +94,12 @@ const config = {
       },
       algolia: {
         // Algolia 提供的应用 ID
-        appId: 'UAEESQQCHX',
+        appId: 'X5HJ3XE2C0',
   
         //  公开 API 密钥：提交它没有危险
-        apiKey: 'c28316332d416509fd7712809b5eb393',
+        apiKey: 'fb24fb295b89f94bb49122c7b6837b6a',
   
-        indexName: 'myBlog',
+        indexName: 'el233io',
   
         // 可选：见下文
         contextualSearch: true,
