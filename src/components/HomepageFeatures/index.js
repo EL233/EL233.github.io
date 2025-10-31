@@ -17,7 +17,7 @@ const FeatureList = [
    
     description: (
       <>
-        student
+        A student
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     
     description: (
       <>
-        Wechat: wmytmovie_11
+        Email:<a href='mailto:p7429189@gmail.com'>p7429189@gmail.com</a>
       </>
     ),
   },

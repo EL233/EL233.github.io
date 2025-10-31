@@ -66,3 +66,16 @@
   );
 }
 
+/* 额外的全局 footer 样式调整 */
+.footer {
+  padding: 2rem 0;
+}
+
+.footer__copyright {
+  margin-top: 2rem;
+}
+
+/* 确保 SVG 继承颜色属性 */
+.footer svg {
+  display: block;
+}
