@@ -7,7 +7,7 @@ const config = {
   favicon: 'img/favicon.ico',
   url: 'https://EL233.github.io',
   baseUrl: '/',
-  deploymentBranch: 'main',
+  deploymentBranch: 'gh-pages',
   organizationName: 'EL233',
   projectName: 'EL233.github.io',
   onBrokenLinks: 'throw',
