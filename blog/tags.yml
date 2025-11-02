@@ -18,8 +18,17 @@ algolia:
   permalink: /algolia
   description: /algolia tag description
 
-  
 swift:
   label: swift
   permalink: /swift
   description: /swift tag description
+
+python:
+  label: python
+  permalink: /python
+  description: /python tag description
+
+TouchDesigner:
+  label: TouchDesigner
+  permalink: /TouchDesigner
+  description: /TouchDesigner tag description
