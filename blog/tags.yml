@@ -32,3 +32,8 @@ TouchDesigner:
   label: TouchDesigner
   permalink: /TouchDesigner
   description: /TouchDesigner tag description
+
+typescript:
+  label: typescript
+  permalink: /typescript
+  description: /typescript tag description
