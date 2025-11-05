@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 import GithubSvg from '@site/src/img/github-142-svgrepo-com.svg';
 import BilibiliSvg from '@site/src/img/bilibili-svgrepo-com.svg';
 import NeteaseSvg from '@site/src/img/netease-cloud-music-svgrepo-com.svg';
+import EmailSvg from '@site/src/img/email-svgrepo-com.svg';
 
 function Footer() {
   const {footer} = useThemeConfig();
@@ -55,6 +56,16 @@ function Footer() {
                 title="Visit my NetEase Music"
               >
                 <NeteaseSvg className={styles.socialIcon} />
+              </a>
+              <a 
+                href="mailto:p7429189@gmail.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={styles.iconLink}
+                aria-label="Email"
+                title="Send me an Email"
+              >
+                <EmailSvg className={styles.socialIcon} />
               </a>
             </div>
           </div>
