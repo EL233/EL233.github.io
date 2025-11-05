@@ -1,10 +1,10 @@
-import { themes as prismThemes } from 'prism-react-renderer';
+const { themes: prismThemes } = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "EL's webSite",
-  tagline: 'you have to be very strong if you want to do something very wrong',
-  favicon: 'img/favicon.ico',
+  tagline: 'EL233',
+  favicon: '/img/favicon.ico',
   url: 'https://EL233.github.io',
   baseUrl: '/',
   deploymentBranch: 'gh-pages',
@@ -54,12 +54,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/1.png',
+      image: '/img/1.png',
       navbar: {
         title: 'Home',
         logo: {
           alt: '',
-          src: 'img/1.png',
+          src: '/img/1.png',
         },
         items: [
           { to: '/blog', label: 'Blog', position: 'left' },
@@ -83,4 +83,4 @@ const config = {
     }),
 };
 
-export default config;
+module.exports = config;

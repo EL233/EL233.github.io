@@ -51,28 +51,28 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Light Mode: 白色图标在深色背景上 */
+/* Light Mode: 使用与页面文字一致的颜色 */
 html[data-theme='light'] .iconLink {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(255, 255, 255, 0.08);
+  color: #a7b3ff;
+  background-color: rgba(110, 123, 140, 0.08);
 }
 
 html[data-theme='light'] .iconLink:hover {
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #5a6875;
+  background-color: rgba(110, 123, 140, 0.15);
+  box-shadow: 0 4px 12px rgba(110, 123, 140, 0.15);
 }
 
-/* Dark Mode: 蓝色图标与页面主题一致 */
+/* Dark Mode: 使用与页面主题一致的蓝紫色调 */
 html[data-theme='dark'] .iconLink {
-  color: #70c8ff;
-  background-color: rgba(112, 200, 255, 0.08);
+  color: #a7b3ff;
+  background-color: rgba(167, 179, 255, 0.08);
 }
 
 html[data-theme='dark'] .iconLink:hover {
-  color: #95d6ff;
-  background-color: rgba(112, 200, 255, 0.15);
-  box-shadow: 0 4px 12px rgba(112, 200, 255, 0.2);
+  color: #c5cdff;
+  background-color: rgba(167, 179, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(167, 179, 255, 0.2);
 }
 
 /* 活跃状态 */
@@ -100,11 +100,11 @@ html[data-theme='dark'] .iconLink:hover {
     justify-content: center;
     padding: 1.5rem 0 1rem 0;
   }
-
+  
   .customSocial {
     text-align: center;
   }
-
+  
   .socialIcons {
     justify-content: center;
     gap: 0.875rem;
@@ -119,7 +119,7 @@ html[data-theme='dark'] .iconLink:hover {
     width: 22px;
     height: 22px;
   }
-
+  
   .footerBottom {
     padding: 1.25rem 0;
   }

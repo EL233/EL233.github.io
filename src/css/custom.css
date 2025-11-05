@@ -1,29 +1,29 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #243f6b;
-  --ifm-color-primary-dark: #203960;
-  --ifm-color-primary-darker: #1f365b;
-  --ifm-color-primary-darkest: #192c4b;
-  --ifm-color-primary-light: #284576;
-  --ifm-color-primary-lighter: #29487b;
-  --ifm-color-primary-lightest: #2f528b;
-  --ifm-background-color: #fafafa;
+  /* Harmonize with hero SVG; soft violet-blue primary, neutral background */
+  --ifm-color-primary: #6c63ff;
+  --ifm-color-primary-dark: #5a52ea;
+  --ifm-color-primary-darker: #5049d9;
+  --ifm-color-primary-darkest: #3e38b9;
+  --ifm-color-primary-light: #8a84ff;
+  --ifm-color-primary-lighter: #a4a0ff;
+  --ifm-color-primary-lightest: #d9d7ff;
+  --ifm-background-color: #f6f7fb;
 }
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #70c8ff;
-  --ifm-color-primary-dark: #4bbaff;
-  --ifm-color-primary-darker: #39b3ff;
-  --ifm-color-primary-darkest: #029eff;
-  --ifm-color-primary-light: #95d6ff;
-  --ifm-color-primary-lighter: #a7ddff;
-  --ifm-color-primary-lightest: #def2ff;
+  /* Cooler dark palette inspired by cworld0.com */
+  --ifm-color-primary: #9aa9ff;
+  --ifm-color-primary-dark: #8294ff;
+  --ifm-color-primary-darker: #6e82ff;
+  --ifm-color-primary-darkest: #5166f8;
+  --ifm-color-primary-light: #b4bfff;
+  --ifm-color-primary-lighter: #c7d0ff;
+  --ifm-color-primary-lightest: #e6e9ff;
 }
 
 [data-theme='light'] .DocSearch {
@@ -78,4 +78,21 @@
 /* 确保 SVG 继承颜色属性 */
 .footer svg {
   display: block;
+}
+
+/* Navbar blend similar to kuizuo.me */
+.navbar {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: saturate(1.2) blur(10px);
+  -webkit-backdrop-filter: saturate(1.2) blur(10px);
+  box-shadow: none;
+}
+[data-theme='dark'] .navbar {
+  background: rgba(17, 24, 39, 0.5);
+  backdrop-filter: saturate(1.1) blur(10px);
+  -webkit-backdrop-filter: saturate(1.1) blur(10px);
+}
+
+.navbar__inner, .navbar__items {
+  border-color: transparent;
 }

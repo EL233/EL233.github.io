@@ -127,9 +127,9 @@ Yeoman 是一个项目模板生成器框架，而 generator-code 是它的插件
 <p>我们可以直接用库乐队的木鱼音效作为此app的音效素材:</p>
 <p><img decoding="async" loading="lazy" alt="图片" src="https://el233.github.io/zh/assets/images/sound-da392d1abe255aa84a3a60df08b3a873.png" width="2776" height="1610" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="真机测试效果">真机测试效果<a href="https://el233.github.io/zh/blog/woodenfish-app#%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95%E6%95%88%E6%9E%9C" class="hash-link" aria-label="真机测试效果的直接链接" title="真机测试效果的直接链接">​</a></h3>
-<img src="https://el233.github.io/img/IMG_1183.PNG" alt="图片" width="235">
-<img src="https://el233.github.io/img/IMG_1184.PNG" alt="图片" width="235">
-<img src="https://el233.github.io/img/IMG_1186.PNG" alt="图片" width="235">]]></content:encoded>
+<img src="https://el233.github.io/static/img/IMG_1183.PNG" alt="图片" width="235">
+<img src="https://el233.github.io/static/img/IMG_1184.PNG" alt="图片" width="235">
+<img src="https://el233.github.io/static/img/IMG_1186.PNG" alt="图片" width="235">]]></content:encoded>
             <category>project</category>
             <category>blog</category>
             <category>swift</category>
@@ -142,7 +142,7 @@ Yeoman 是一个项目模板生成器框架，而 generator-code 是它的插件
             <description><![CDATA[最近一直刷到大佬们做的 TD 作品，觉得特别好玩，便在红薯上找了个简单的教程跟着做了一遍。]]></description>
             <content:encoded><![CDATA[<p>最近一直刷到大佬们做的 TD 作品，觉得特别好玩，便在红薯上找了个简单的教程跟着做了一遍。<br>
 <!-- -->以下是成果视频捏：</p>
-<video width="640" height="360" controls=""><source src="/video/163229.MP4" type="video/mp4"><p>你的浏览器不支持播放视频哦。</p></video>
+<video width="640" height="360" controls=""><source src="/static/video/163229.MP4" type="video/mp4"><p>你的浏览器不支持播放视频哦。</p></video>
 <p>附上<a href="https://www.xiaohongshu.com/user/profile/5f2a0969000000000101c83e?xsec_token=ABt1Un3At6PFffTDNQ9cfAVmcGHB0n-nUvI185xPqPZfY=&amp;xsec_source=pc_search" target="_blank" rel="noopener noreferrer">原博主</a>主页</p>]]></content:encoded>
             <category>blog</category>
             <category>TouchDesigner</category>
@@ -265,7 +265,29 @@ Yeoman 是一个项目模板生成器框架，而 generator-code 是它的插件
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="为什么要写博客">为什么要写博客<a href="https://el233.github.io/zh/blog/about#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2" class="hash-link" aria-label="为什么要写博客的直接链接" title="为什么要写博客的直接链接">​</a></h3>
 <ul>
 <li>觉得好玩 想写🤓</li>
-</ul>]]></content:encoded>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="关于名字">关于名字<a href="https://el233.github.io/zh/blog/about#%E5%85%B3%E4%BA%8E%E5%90%8D%E5%AD%97" class="hash-link" aria-label="关于名字的直接链接" title="关于名字的直接链接">​</a></h3>
+<p>为什么叫EL233呢，其实可以叫我十一，EL是十一的意思，至于233就是233。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="技术栈">技术栈<a href="https://el233.github.io/zh/blog/about#%E6%8A%80%E6%9C%AF%E6%A0%88" class="hash-link" aria-label="技术栈的直接链接" title="技术栈的直接链接">​</a></h3>
+<ul>
+<li>
+<p>💻 编程语言 JavaScript / TypeScript、Python</p>
+</li>
+<li>
+<p>🗄️ 数据库：MySQL、MongoDB、Redis</p>
+</li>
+<li>
+<p>🧩 框架 React、Vue</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="一些杂乱的">一些杂乱的<a href="https://el233.github.io/zh/blog/about#%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B9%B1%E7%9A%84" class="hash-link" aria-label="一些杂乱的的直接链接" title="一些杂乱的的直接链接">​</a></h3>
+<p>本人热爱看live，有多次演出志愿者、工作人员经验。<br>
+<!-- -->最爱的乐队是my little airport<br>
+<!-- -->最近的兴趣是剑玉，自以为小有天赋，新手十招很快就过了，正在进一步的练习，希望有朝一日可以玩的特别厉害。<br>
+<!-- -->日本語をゆっくり勉強しています！</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="关于博客首页">关于博客首页<a href="https://el233.github.io/zh/blog/about#%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E9%A6%96%E9%A1%B5" class="hash-link" aria-label="关于博客首页的直接链接" title="关于博客首页的直接链接">​</a></h3>
+<p>参考自<a href="https://github.com/kuizuo" target="_blank" rel="noopener noreferrer">愧怍</a><br>
+<!-- -->我创建此博客的原因其中一部份也是刷到这位大佬的网站，觉得他魔改的特别好。</p>]]></content:encoded>
         </item>
     </channel>
 </rss>
