@@ -54,7 +54,7 @@ export default function Hero() {
               href="/blog/about/" 
               className="font-medium text-sm no-underline hover:no-underline"
             >
-              <Translate id="homepage.hero.introduce">关于我</Translate>
+              <Translate id="homepage.hero.introduce">关于</Translate>
             </a>
           </MovingButton>
         </motion.div>

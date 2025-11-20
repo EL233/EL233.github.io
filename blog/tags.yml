@@ -37,3 +37,14 @@ typescript:
   label: typescript
   permalink: /typescript
   description: /typescript tag description
+
+chrome:
+  label: chrome
+  permalink: /chrome
+  description: /chrome tag description
+
+vue:
+  label: vue
+  permalink: /vue
+  description: /vue tag description
+  

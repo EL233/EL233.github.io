@@ -53,7 +53,7 @@
 }
 
 .circle {
-  @apply absolute top-0 w-full h-full bg-gradient-to-r from-[rgb(150,255,244,0.81)] to-[rgb(0,71,252,0.81)] rounded-full opacity-30;
+  @apply absolute top-0 w-full h-full bg-linear-to-r from-[rgb(150,255,244,0.81)] to-[rgb(0,71,252,0.81)] rounded-full opacity-30;
   filter: blur(80px);
   z-index: -1;
 }

@@ -1,4 +1,10 @@
-﻿# Hello👋 我是EL
+﻿---
+slug: about
+title: 关于
+# authors: [EL]
+tags: [blog]
+---
+# Hello👋 我是EL
 - 一个在读大学生👩‍💻
 <!-- truncate -->
 ### 为什么要写博客
