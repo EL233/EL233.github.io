@@ -24,8 +24,8 @@ export default function Hero() {
           variants={variants}
           className={styles.hero_text}
         >
-          <Translate id="homepage.hero.greet">你好，我是</Translate>{' '}
-          <span className={styles.name}>EL233</span>
+          <Translate id="homepage.hero.greet">Hello I'm</Translate>{' '}
+          <span className={styles.name}>Aki</span>
           <span className="ml-1">🥸</span>
         </motion.h1>
         
@@ -36,7 +36,7 @@ export default function Hero() {
           variants={variants}
           className="max-lg:px-4"
         >
-          <Translate id="homepage.hero.text">欢迎来到我的小站😈</Translate>
+          <Translate id="homepage.hero.text">Welcome to my little corner😈</Translate>
         </motion.p>
         
         <motion.div
@@ -54,7 +54,7 @@ export default function Hero() {
               href="/blog/about/" 
               className="font-medium text-sm no-underline hover:no-underline"
             >
-              <Translate id="homepage.hero.introduce">关于</Translate>
+              <Translate id="homepage.hero.introduce">about me</Translate>
             </a>
           </MovingButton>
         </motion.div>

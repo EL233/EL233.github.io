@@ -47,4 +47,18 @@ vue:
   label: vue
   permalink: /vue
   description: /vue tag description
+
+AI:
+  label: AI
+  permalink: /ai
+  description: Artificial Intelligence related posts
   
+RAG:
+  label: RAG
+  permalink: /rag
+  description: Retrieval Augmented Generation related posts
+
+knowledge-base:
+  label: knowledge-base
+  permalink: /knowledge-base
+  description: Knowledge base related posts
